@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "privateclient",
+  "version": "${version}",
+  "name": "Private Client",
+  "description": "Client-side utility mod for private worlds: storage ESP, ore ESP, freecam, anti-knockback.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.privateclient.PrivateClient"]
+  },
+  "mixins": [
+    { "config": "privateclient.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": ">=26.2-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
